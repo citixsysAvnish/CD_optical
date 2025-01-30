@@ -17,9 +17,30 @@ app_license = "mit"
 # 		"logo": "/assets/cxs_optical/logo.png",
 # 		"title": "Cxs Optical",
 # 		"route": "/cxs_optical",
-# 		"has_permission": "cxs_optical.api.permission.has_app_permission"
+# 		#"has_permission": "cxs_optical.api.permission.has_app_permission"
 # 	}
 # ]
+after_migrate = "cxs_optical.migrate.after_migrate"
+
+# custom_fields = {
+#     "item": [
+#         {
+#             "fieldname": "itemType",
+#             "label": "Item Type",
+#             "fieldtype": "list",
+#             "options": "Item Type",
+#             "insert_after": "description",
+#             "mandatory": 1
+#         },
+#         {
+#             "fieldname": "leadTime",
+#             "label": "Lead Time (Min Delivery Days)",
+#             "fieldtype": "int",
+#             "insert_after": "itemType",
+#             "mandatory": 0
+#         }
+#     ]
+# }
 
 # Includes in <head>
 # ------------------
@@ -42,8 +63,11 @@ app_license = "mit"
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
-# include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+# include js in doctype views 
+doctype_js = {
+	"Item": "public/js/doctype_js/item.js",
+	"Store Settings": "public/js/doctype_js/store_settings.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -137,13 +161,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "Item": {
+		"validate": "cxs_optical.cxs_optical.doc_events.item.validate"
+        	},
+}
 
 # Scheduled Tasks
 # ---------------
@@ -241,4 +268,9 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [["dt", "=", "Item"]]
+    }
+]

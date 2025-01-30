@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_frame_type_code",
+ "creation": "2025-01-22 16:56:05.817347",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "frame_type_section",
+  "custom_opt_frame_type_code",
+  "custom_opt_frame_type_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "frame_type_section",
+   "fieldtype": "Section Break",
+   "label": "Frame Type"
+  },
+  {
+   "fieldname": "custom_opt_frame_type_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "length": 25,
+   "placeholder": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_opt_frame_type_description",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "placeholder": "Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-28 16:37:59.111253",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Frame type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

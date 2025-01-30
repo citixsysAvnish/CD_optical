@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-29 12:29:02.912562",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "holiday_list_section",
+  "custom_opt_store_holiday_date",
+  "custom_opt_store_holiday_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "holiday_list_section",
+   "fieldtype": "Section Break",
+   "label": "Holiday List"
+  },
+  {
+   "fieldname": "custom_opt_store_holiday_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "custom_opt_store_holiday_description",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-29 12:42:30.719852",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Store Holiday",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

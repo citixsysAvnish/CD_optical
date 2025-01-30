@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-20 17:37:21.583308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lenscombination",
+  "lenstype",
+  "column_break_yldc",
+  "lensmaterial",
+  "column_break_sbov",
+  "lenscolor",
+  "column_break_uzow",
+  "isactive",
+  "lens_treatment_section",
+  "lenstreatment"
+ ],
+ "fields": [
+  {
+   "fieldname": "lenscombination",
+   "fieldtype": "Section Break",
+   "label": "Lens Combination"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "lenstype",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Lens Type",
+   "options": "Lens Type",
+   "placeholder": "Lens Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lensmaterial",
+   "fieldtype": "Link",
+   "label": "Lens Material",
+   "options": "Lens Material",
+   "placeholder": "Lens Material",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lenscolor",
+   "fieldtype": "Link",
+   "label": "Lens Color",
+   "link_filters": "[[\"Lens or Frame Color\",\"lens\",\"=\",1]]",
+   "options": "Lens or Frame Color",
+   "placeholder": "Lens Color"
+  },
+  {
+   "default": "0",
+   "fieldname": "isactive",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_yldc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uzow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lens_treatment_section",
+   "fieldtype": "Section Break",
+   "label": "Lens Treatment"
+  },
+  {
+   "fieldname": "lenstreatment",
+   "fieldtype": "Table",
+   "options": "Lens Treatment Mapping Child",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-21 17:59:29.773533",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Lens Treatment Mapping",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_shae_type_code",
+ "creation": "2025-01-20 15:06:10.195398",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shape_type_section",
+  "custom_opt_shae_type_code",
+  "custom_opt_shae_type_description",
+  "section_break_ekma",
+  "custom_opt_shae_type_shapeimage",
+  "column_break_rrxk",
+  "custom_opt_shae_type_shapepreview"
+ ],
+ "fields": [
+  {
+   "fieldname": "shape_type_section",
+   "fieldtype": "Section Break",
+   "label": "Shape Type"
+  },
+  {
+   "fieldname": "section_break_ekma",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rrxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_opt_shae_type_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "length": 25,
+   "placeholder": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_opt_shae_type_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "placeholder": "Description"
+  },
+  {
+   "fieldname": "custom_opt_shae_type_shapeimage",
+   "fieldtype": "Attach Image",
+   "label": "Shape Image"
+  },
+  {
+   "fieldname": "custom_opt_shae_type_shapepreview",
+   "fieldtype": "Image",
+   "label": "Shape Preview",
+   "options": "custom_opt_shae_type_shapeimage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-28 17:25:17.163094",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Shape Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_lens_frame_color_code",
+ "creation": "2025-01-20 16:33:32.809047",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lensframe_color_section",
+  "custom_opt_lens_frame_color_code",
+  "custom_opt_lens_frame_color_description",
+  "custom_opt_lens_frame_color_clip",
+  "custom_opt_lens_frame_color_contact_lens",
+  "custom_opt_lens_frame_color_lens",
+  "custom_opt_lens_frame_color_metal",
+  "custom_opt_lens_frame_color_frame"
+ ],
+ "fields": [
+  {
+   "fieldname": "lensframe_color_section",
+   "fieldtype": "Section Break",
+   "label": "Lens/Frame Color"
+  },
+  {
+   "fieldname": "custom_opt_lens_frame_color_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "length": 25,
+   "placeholder": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custom_opt_lens_frame_color_description",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "placeholder": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_lens_frame_color_clip",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Clip"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_lens_frame_color_contact_lens",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Contact Lens"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_lens_frame_color_lens",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Lens"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_lens_frame_color_metal",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Metal"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_opt_lens_frame_color_frame",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Frame"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-28 17:20:12.377513",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Lens or Frame Color",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

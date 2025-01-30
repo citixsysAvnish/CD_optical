@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:custom_opt_optometrist_scheduling_code",
+ "creation": "2025-01-29 17:31:53.771401",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_opt_optometrist_scheduling_code",
+  "custom_opt_optometrist_scheduling_name",
+  "custom_opt_optometrist_scheduling_store",
+  "section_break_vhvk",
+  "table_cjwt"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_opt_optometrist_scheduling_code",
+   "fieldtype": "Link",
+   "label": "Optometrist Code",
+   "options": "Optometrist",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "custom_opt_optometrist_scheduling_code.custom_opt_optomestrist_name",
+   "fieldname": "custom_opt_optometrist_scheduling_name",
+   "fieldtype": "Read Only",
+   "label": "Optometrist Name"
+  },
+  {
+   "fieldname": "custom_opt_optometrist_scheduling_store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_vhvk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_cjwt",
+   "fieldtype": "Table",
+   "options": "Optometrist Schedule Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 17:54:52.372680",
+ "modified_by": "Administrator",
+ "module": "Cxs Optical",
+ "name": "Optometrist Scheduling",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
